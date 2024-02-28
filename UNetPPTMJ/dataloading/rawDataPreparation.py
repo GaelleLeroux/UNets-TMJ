@@ -75,6 +75,7 @@ def getImgsMsksAndSpacing(ori_data_path: str) -> Tuple[SEQ_ARR_T, SEQ_ARR_T, flo
 
 def generatePickle(data_path: str, flag: str):
     subdirs = subDirs(data_path)
+    print("subdir : ",subdirs)
     bar = Bar("Preparing {} data - ".format(flag), max=len(subdirs))
     imgs = []
     msks = []

@@ -26,7 +26,7 @@ class Drawer2D(Mask2D):
         if Drawer2D.imgChannel(mask) == 1:
             mask = Drawer2D.gray2rgb(mask)
         im = img.astype(float)
-        channel = np.ones(img.shape[:2], np.float)
+        channel = np.ones(img.shape[:2], float)
         color_ = np.concatenate((channel[:,:,np.newaxis]*color[0],channel[:,:,np.newaxis]*color[1],channel[:,:,np.newaxis]*color[2]), axis = 2)
         f_im = im*(1-mask) + im*mask*(1-alpha) + color_*alpha*mask
         return f_im.astype(np.uint8)

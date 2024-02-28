@@ -7,9 +7,9 @@ export TRAIN_PATH="./data-demo/train"
 export TEST_PATH="./data-demo/test"
 
 # The following can be kept intact
-export nnUNet_raw_data_base="$PWD/Database/nnUNet_raw_data_base"
-export nnUNet_preprocessed="$PWD/Database/nnUNet_preprocessed"
-export RESULTS_FOLDER="$PWD/Database/RESULTS_FOLDER"
+export nnUNet_raw_data_base="/home/luciacev/Documents/Gaelle/Data/MultimodelReg/test"
+export nnUNet_preprocessed="/home/luciacev/Documents/Gaelle/Data/MultimodelReg/UNET-TMJ/prepross_data/"
+export RESULTS_FOLDER="/home/luciacev/Documents/Gaelle/Data/MultimodelReg/UNET-TMJ/result_data"
 
 export tmj_task_name="Task501_TMJSeg"
 export TempDir="$PWD/.TempDir"
